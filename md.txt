@@ -1,0 +1,92 @@
+## Clothing Shops in Salzburg – Interactive Map
+
+This web-based project visualizes clothing shop locations across Salzburg, Austria, using Leaflet.js and GeoJSON data. The map includes interactive features such as popups, search functionality, hover effects, and a layer control for enhanced user experience.
+
+---
+
+## Target User
+
+The project is aimed at:
+- *Tourists* visiting Salzburg who want to discover fashion stores;
+- *Local shoppers* searching for specific clothing or sports shops;
+- *Urban planners or students* interested in spatial distribution of commerce in the city.
+
+---
+
+## Data Source
+
+- The dataset clothshops.geojson contains a collection of point features representing clothing shop locations in Salzburg.
+- Attributes include:
+  - name: Shop name
+
+
+---
+
+## Methodology
+
+- *Map Library:* [Leaflet.js](https://leafletjs.com/) for rendering interactive maps.
+- *Base map:* OpenStreetMap (default) and OpenTopoMap (satellite-like alternative).
+- *Custom Markers:* Circle markers and custom icons to distinguish shops.
+- *Interactivity:*
+  - Hover highlights and animations;
+  - Search by shop name;
+
+---
+
+## Design Choices
+
+- *Color scheme:* Orange markers for default shops; yellow for highlighted.
+- *UI/UX:* Minimalistic and functional — focused on quick interaction and easy visual feedback.
+- *Responsive interaction:* Smooth zoom, search, hover animation, and popup logic.
+- *Accessibility:* Simple, clear UI without complex overlays.
+
+---
+
+## Analysis
+
+- The distribution of shops is mostly concentrated in central Salzburg (around Getreidegasse and Linzer Gasse).
+- Interactive filtering (e.g. between clothing and sports shops) enables quick insights into commercial zoning.
+- The map encourages spatial exploration and supports decision-making for visitors.
+
+---
+
+## Potential Improvements
+
+- Add category filtering UI (checkboxes or dropdown).
+- Add walking routes between shops using polyline features.
+- Implement clustering for better performance at larger scales.
+- Support for multi-language (English + German).
+- Add analytics (e.g., most clicked shop, search terms).
+ - Popups with details;
+  - Fly-to animation on click;
+  - Double-click coordinates display;
+  - Search by shop name;
+  - Legend for marker colors;
+  - Layer control for toggling shop types (clothing vs sports).
+- Attributes include:
+  - address: Shop address (optional)
+  - hours: Opening hours (optional)
+  - type: (optional) for filtering shop types, e.g. "clothing", "sports"
+
+---
+
+## Critical Reflection
+
+Working on this project improved my understanding of:
+- Leaflet fundamentals and plugin usage;
+- GeoJSON structuring and parsing;
+- JavaScript DOM interaction;
+- Map UI/UX principles;
+- Debugging fetch and JSON errors.
+
+Challenge is managing multiple layers and avoiding duplicated data — especially when loading and styling GeoJSON features multiple times. I also learned to structure map logic modularly (steps 1 to 8).
+
+---
+
+## Key Takeaways
+
+- Small datasets can become powerful when presented interactively.
+- User experience depends heavily on smooth interactivity and visual clarity.
+- Leaflet is a lightweight but powerful tool for geospatial web applications.
+
+---
